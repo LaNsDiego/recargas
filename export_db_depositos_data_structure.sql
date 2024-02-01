@@ -34,7 +34,7 @@ CREATE TABLE `bets` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,6 +43,7 @@ CREATE TABLE `bets` (
 
 LOCK TABLES `bets` WRITE;
 /*!40000 ALTER TABLE `bets` DISABLE KEYS */;
+INSERT INTO `bets` VALUES (1,'PERÚ VS PARAGUA - Gana Perú',35.00,1,1,1,1.50,52.50,'2024-02-01 17:29:04','2024-02-01 17:29:04');
 /*!40000 ALTER TABLE `bets` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -211,7 +212,7 @@ CREATE TABLE `players` (
 
 LOCK TABLES `players` WRITE;
 /*!40000 ALTER TABLE `players` DISABLE KEYS */;
-INSERT INTO `players` VALUES (1,'78451298','Juan Roberto','Quiroz Soto',100.00,'2024-02-01 16:47:28','2024-02-01 16:53:30'),(2,'00426498','Carlos Alex','Mamani Yanqui',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28'),(3,'72458491','Mauricio Jean','Sifuentes Molina',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28'),(4,'72558461','Elisban Duan','Ramirez Altamirano',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28');
+INSERT INTO `players` VALUES (1,'78451298','Juan Roberto','Quiroz Soto',65.00,'2024-02-01 16:47:28','2024-02-01 17:29:04'),(2,'00426498','Carlos Alex','Mamani Yanqui',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28'),(3,'72458491','Mauricio Jean','Sifuentes Molina',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28'),(4,'72558461','Elisban Duan','Ramirez Altamirano',0.00,'2024-02-01 16:47:28','2024-02-01 16:47:28');
 /*!40000 ALTER TABLE `players` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -244,7 +245,7 @@ CREATE TABLE `recharges` (
 
 LOCK TABLES `recharges` WRITE;
 /*!40000 ALTER TABLE `recharges` DISABLE KEYS */;
-INSERT INTO `recharges` VALUES (1,'FACEBOOK','CV-123456','100','2024-02-01T11:47:28','BCP',1,'vouchers/3ZsNpdfAjAoAEmZLeUeecGGC9gEdY45kP7URgWvA.png','2024-02-01 16:47:28','2024-02-01 16:53:30');
+INSERT INTO `recharges` VALUES (1,'FACEBOOK','CV-123456','100','2024-02-01T11:47:28','BCP',1,'vouchers/kRYXf96CcF2hTBPyORrfJuGlsXVp6GSPG74xadyr.png','2024-02-01 16:47:28','2024-02-01 17:02:27');
 /*!40000 ALTER TABLE `recharges` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -289,4 +290,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-01  6:55:12
+-- Dump completed on 2024-02-01  7:29:21
